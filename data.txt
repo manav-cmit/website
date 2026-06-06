@@ -1,0 +1,260 @@
+# =====================================================================
+# DORSAN FILTRATION — chatbot knowledge file
+# Built from the official Dorsan catalogues (Lab, Industrial, Air, Chromatography)
+# =====================================================================
+# HOW TO EDIT:
+#   Q: keyword1, keyword2, keyword3      <- trigger words (any match works)
+#   A: The answer text. Can run onto more lines until the next Q:.
+#   # lines are comments and are ignored. Separate blocks with a blank line.
+#   data.txt must sit in the SITE ROOT (next to index.html).
+# =====================================================================
+
+Q: hello, hi, hey, good morning, good afternoon, namaste
+A: Hello! Welcome to Dorsan Filtration - "Living Filtration". I can help with syringe
+   filters, membrane discs, filter cartridges, filter papers, air-monitoring filters,
+   filter presses, specs, applications, samples and quotes. What are you looking for?
+
+Q: about, who, company, dorsan, history, since
+A: Dorsan Filtration has produced liquid and laboratory filtration solutions since 1998,
+   with the motto "Living Filtration". We serve customers in more than 60 countries and
+   have production facilities in Germany, Spain, France, Tunisia, India and Mexico.
+
+Q: where, factory, plant, production, made, manufactur
+A: Dorsan has production facilities in Germany, Spain, France, Tunisia, India and Mexico,
+   serving 60+ countries. In India we operate as Dorsan Filtration India Pvt. Ltd. in
+   Changodar, Ahmedabad, Gujarat.
+
+# ---------------- SYRINGE FILTERS ----------------
+
+Q: syringe filter, syringe, wheel filter
+A: Dorsan syringe filters come in two ranges: the G Series (with an outer ring for extra
+   strength under high pressure or dense liquids) and the T Series (with a polypropylene
+   prefilter to extend filtration volume). Membranes: CA, MCE, Nylon, PES, PP, PTFE and PVDF.
+   Diameters: 4 mm, 13 mm, 25 mm and 30 mm (35 mm coming soon). Pore sizes: 0.45 µm and 0.22 µm.
+   Housing is medical-grade polypropylene. Tell me your solvent and volume for a recommendation.
+
+Q: g series, g-series, outer ring, high pressure
+A: The G Series syringe filter has an outer ring that adds strength and prevents filter
+   rupture when working with high pressures or very dense liquids.
+
+Q: t series, t-series, prefilter, pre filter, viscous, dirty sample
+A: The T Series syringe filter has a polypropylene prefilter on the membrane, which
+   prefilters solutions better and extends the filtration volume - ideal for heavier or
+   more particle-laden samples.
+
+Q: diameter, 4mm, 13mm, 25mm, 30mm, 35mm, size, volume
+A: Syringe filter diameters: 4 mm and 13 mm for small volumes (less sample loss),
+   25 mm and 30 mm for larger or dirtier samples. A 35 mm size is launching soon for
+   higher volumes and challenging samples.
+
+Q: pore size, 0.22, 0.2 micron, 0.45, 0.1 micron, micron, um
+A: Standard syringe-filter pore sizes are 0.45 µm (general clarification, routine HPLC) and
+   0.22 µm (sterilising-grade, removes bacteria, for UHPLC/LC-MS). Membrane discs offer the
+   same pore sizes; 0.1 µm is also available for the most demanding chromatography samples.
+
+# ---------------- MEMBRANE MATERIALS ----------------
+
+Q: pvdf, hydrophilic pvdf
+A: PVDF (hydrophilic) offers low protein binding and ultra-low extractables - ideal for
+   LC-MS and sensitive analyses, plus broad chemical compatibility. In cartridge form,
+   integrity-tested pore sizes run 0.1, 0.2, 0.45 and 0.65 µm. Applications include protein
+   purification, blood filtration, cell cultures and pharmaceutics.
+
+Q: ptfe, hydrophobic
+A: PTFE is hydrophobic with excellent chemical resistance - the best choice for aggressive,
+   non-aqueous solvents, acids, bases and gas/venting applications. As a cartridge it is
+   validated as a sterilising-grade filter (ASTM D6394 SP0112) for sterile gas filtration,
+   bioreactor off-gassing, autoclave and tank vents. Pre-wet for aqueous samples.
+
+Q: nylon, ny
+A: Nylon membranes give broad chemical compatibility for both aqueous and organic solvents -
+   a solid general-purpose choice for HPLC. Note higher protein binding, so avoid where
+   protein recovery matters.
+
+Q: pes, polyethersulfone, polyethersulphone
+A: PES offers fast aqueous flow with very low protein binding and low adsorption - excellent
+   for aqueous buffers, biological samples and fermented beverages. Cartridge versions are
+   FDA-compliant with a stainless-steel ring for steam sterilisation, pore sizes 0.2-0.8 µm.
+
+Q: cellulose acetate, ca
+A: Cellulose Acetate (CA) membranes are hydrophilic with very low protein binding - well
+   suited to aqueous biological samples.
+
+Q: mce, mixed cellulose, cellulose esters
+A: Mixed Cellulose Esters (MCE) membranes are an economical choice for routine aqueous
+   filtration and microbiology, with high retention capacity.
+
+Q: cellulose nitrate, nc, blot, protein affinity
+A: Cellulose Nitrate (NC) membranes have excellent protein affinity and high blocking
+   capacity - popular for Southern, Northern and Western blot transfer methods.
+
+Q: membrane list, what membranes, materials, which membranes
+A: Dorsan membranes: Cellulose Acetate (CA), Mixed Cellulose Esters (MCE), Cellulose Nitrate
+   (NC), Nylon (NY), Polycarbonate (PCTE), Polyethersulfone (PES), Polypropylene (PP),
+   PTFE and PVDF. Tell me your solvent and I'll suggest the right one.
+
+Q: compatibility, compatible, solvent, acid, chemical, which membrane
+A: Quick membrane guide - Nylon: general HPLC, broad solvents. Hydrophilic PVDF: LC-MS,
+   ultra-low extractables. PTFE: aggressive/non-aqueous solvents. PES or CN: aqueous buffers,
+   high flow, low adsorption. Tell me your exact solvent and sample and I'll narrow it down.
+
+# ---------------- MEMBRANE DISC FILTERS ----------------
+
+Q: membrane disc, disc filter, mobile phase, disc
+A: Membrane disc filters are for mobile-phase filtration - protecting pumps/injectors and
+   giving stable baselines (mandatory for UHPLC and LC-MS). Available in Nylon, PVDF, PTFE
+   and MCE. Diameters: 25, 47, 90, 142 and 293 mm. Pore sizes: 0.45 µm and 0.22 µm.
+
+# ---------------- CHROMATOGRAPHY ----------------
+
+Q: hplc, uhplc, lc-ms, chromatography, column, sample prep, sample preparation
+A: For chromatography, filtration is "column insurance". Use a syringe filter for final
+   sample filtration (0.45, 0.22 or 0.1 µm) to protect the column and get sharp, reproducible
+   peaks, and a membrane disc filter for mobile-phase filtration. Membrane picks: Nylon for
+   general HPLC, hydrophilic PVDF for LC-MS, PTFE for aggressive solvents, PES/CN for aqueous buffers.
+
+Q: why filter, baseline, peak, column life, backpressure, ghost peak
+A: Unfiltered samples and solvents cause peak tailing, baseline noise, rising backpressure,
+   blocked column frits and shorter column life. Proper syringe + mobile-phase filtration
+   gives clean injections, stable baselines and reproducible, validated data.
+
+# ---------------- INDUSTRIAL CARTRIDGES ----------------
+
+Q: cartridge, filter cartridge, cartridges
+A: Dorsan industrial cartridges include: String Wound, Meltblown, Pleated PP, PES, PTFE,
+   PVDF, Glass Microfiber (GF), Activated Carbon, PET (synthetic pleated), Stainless Steel,
+   High Flow (DLMHFB), Maxpleat (DLHF) and Delta Flow (DLPP), plus DUTC pleated capsules.
+   Tell me your fluid, flow rate and micron rating and I'll point you to the right one.
+
+Q: string wound, wounded, wound cartridge
+A: String Wound depth cartridges: lengths 4" to 50", porosities 1-200 µm, great chemical
+   compatibility, cotton/PP/PET/GF fibers, PP or 304/316L stainless inner core. A low-cost
+   prefilter for process water, plating baths, chemicals, oils and wastewater.
+
+Q: meltblown, melt blown
+A: Meltblown depth cartridges: PP or Nylon fibers, 9 3/4" to 50", 1-200 µm, absolute or
+   nominal retention, free of binding additives/resins. Good general prefilter.
+
+Q: pp cartridge, pleated pp, polypropylene cartridge
+A: Pleated PP cartridges: 10" to 40", 0.2-40 µm, up to 99.98% efficiency (Beta 5000) in
+   absolute grade, 100% polypropylene, no additives. For food & beverage, RO prefiltration,
+   chemicals, pharma and API.
+
+Q: activated carbon, carbon, chlorine, odor, taste, decolor
+A: Activated Carbon cartridges (granular, block or impregnated cellulose), 9 3/4" to 20",
+   remove chlorine, odour and colour from water and decolourise soft drinks. Huge surface
+   area (100-2000 m2/g).
+
+Q: stainless steel cartridge, steel, 316, 304, high temperature
+A: Stainless Steel cartridges (AISI 304 or 316-L), cylindrical or pleated, reusable, 9 3/4"
+   to 40", 5-850 µm, up to 650 C and 4 bar differential pressure. For high-temperature,
+   caustic, corrosive, high-viscosity and gas filtration.
+
+Q: high flow, maxpleat, delta flow, dlhf, dlpp, dlmhfb
+A: High-Flow ranges: High Flow (DLMHFB, 6.5" dia, 40"/60", 1-70 µm), Maxpleat (DLHF, 6"/152 mm,
+   up to 70 m3/h, coreless), and Delta Flow (DLPP, 3-layer meltblown, coreless). Ideal as RO
+   pretreatment, desalination, condensate and cooling-water filtration.
+
+Q: glass microfiber, gf, microfiber cartridge
+A: Glass Microfiber (GF) cartridges use borosilicate microfibers with a natural positive
+   charge that traps bacteria, endotoxins and colloids. FDA-compliant; perfect prefilters
+   ahead of absolute membranes. For corn syrup, wine clarification, RO and pharma.
+
+Q: capsule, dutc, disposable
+A: DUTC-Pure capsule filters are disposable, 100% integrity-testable units for 2 L to 100 L
+   process development and pilot/manufacturing scale - eliminating cleaning and validation costs.
+
+# ---------------- FILTER PAPERS / SHEETS / PRESSES ----------------
+
+Q: filter paper, papers, qualitative, quantitative, ashless, ash-free, folded, buchner
+A: Filter papers: Qualitative (routine, viscous liquids), Quantitative (ash-free for
+   gravimetric analysis), Folded (faster, full-surface flow, 2-50 µm), Microglass Fiber
+   (binder-free, sub-1 µm, air/water analysis) and Cytocentrifuge paper. Smooth or creped
+   surfaces, disks or sheets.
+
+Q: filter sheet, sheets, depth filtration, filter module, modules
+A: Filter Sheets and Modules are depth media for solid-liquid separation with high
+   dirt-holding capacity. Sheets come in 40x40 cm or 60x60 cm (or custom); modules in 12"
+   and 16". For chemical, pharma, beverage, food and cosmetics.
+
+Q: filter bag, bags, liquid filter bag
+A: Liquid Filter Bags are 100% synthetic (PP, polyester, nylon monofilament) depth filters
+   with high dirt-holding capacity, silicone-free, for chemical, pharma, beverage, food,
+   cosmetics, plating and wastewater.
+
+Q: filter press, fortiplates, bebinox, labinox, farminox, mininox, pilot 200m, plate
+A: Filter presses: Fortiplates (400x400 mm, 20/40/60 plates), Bebinox plates (310 mm,
+   10/20/30), Pilot 200M (AISI 316, no gaskets), Labinox (316L, L/10 & L/20), Farminox
+   (gasket-free) and Mininox (M150/M300 lab scale). For food & beverage and chem-pharma.
+
+# ---------------- AIR / ENVIRONMENTAL ----------------
+
+Q: air, pollution, air monitoring, pm10, pm2.5, tsp, particulate, emission, stack
+A: For air-pollution control Dorsan offers glass & quartz microfiber filters, thimbles and
+   tapes for PM2.5/PM10/TSP sampling, meeting EPA / DIN EN ISO 23210 / DIN EN 14902 standards.
+   Grades include FV-110, FV-130, FV-20, Q-AZ, FV-1000, FV-6100, PM2.5 PTFE with PP ring and
+   CA-500 (radioactive-iodine sampling).
+
+Q: thimble, extraction thimble, soxhlet, quartz thimble, cellulose thimble
+A: Extraction thimbles (Soxhlet) come in cellulose, glass microfiber (to 500 C) and quartz
+   microfiber (to 1000 C, >99% retention per BS4400). The first digit is inner diameter, the
+   second is outer length (mm); choose one 5-10 mm longer than the extraction chamber.
+
+Q: quartz filter, quartz, high temperature air
+A: Quartz microfiber filters are high-purity, very low metal content, resist up to 1000 C,
+   and suit aggressive/acidic-gas air sampling (except hydrofluoric acid).
+
+# ---------------- INDUSTRIES SERVED ----------------
+
+Q: industries, sectors, applications, what industries, who uses
+A: Dorsan serves pharmaceuticals & biopharma, food & beverages, chemistry, micro-electronics,
+   energy/oil & gas, metal/mechanical/steel, cosmetics, surface treatment, mining, paints &
+   inks, wind power, thermosolar plants and environmental/air-pollution control.
+
+Q: pharma, pharmaceutical, biopharma, api, vaccine, eye drops, sterile
+A: For pharma/biopharma Dorsan supports prefiltration & clarification, RO purification,
+   fermentation/sterilisation tank venting, and filtration of syrups, eye drops, vaccines and
+   API - using PVDF, PTFE, PES membranes, capsules, GF prefilters and sterilising-grade cartridges.
+
+Q: food, beverage, wine, beer, juice, water, drink
+A: For food & beverage Dorsan offers PES and PP cartridges, GF prefilters, filter sheets,
+   papers and presses for wines, beers, fruit juices, mineral water, edible oils and syrups -
+   FDA-compliant materials.
+
+# ---------------- COMMERCIAL ----------------
+
+Q: recommend, help me choose, suggest a filter, not sure, what do you recommend
+A: Happy to recommend! Tell me three things: (1) your fluid/sample or solvent, (2) the volume
+   or flow rate, and (3) the micron rating or whether you need sterile filtration. I'll suggest
+   the membrane/material, format and size.
+
+Q: sample, free sample, trial, test
+A: We can provide samples where available. Share your membrane/material, pore size, format and
+   volume via Request a Quote or email india@dorsanfiltration.com and our team will arrange it.
+
+Q: quote, price, cost, buy, order, purchase, how much, distributor, dealer
+A: For pricing, quotes or to become a distributor, use the Request a Quote button or email
+   india@dorsanfiltration.com (India) / info@dorsanfiltration.com. We reply within one business day.
+
+Q: contact, email, phone, reach, talk, support, number
+A: Contact Dorsan India: Dorsan Filtration India Pvt. Ltd., Sunshine Industrial Hub-1,
+   B/H Cadila Healthcare Ltd., Navapura, Changodar, Ahmedabad - 382210, Gujarat.
+   Tel +91 99786 25620, email india@dorsanfiltration.com. Website www.dorsanfiltration.com.
+
+Q: india, ahmedabad, gujarat, changodar
+A: Dorsan Filtration India Pvt. Ltd. is at Sunshine Industrial Hub-1, B/H Cadila Healthcare
+   Ltd., Navapura, Changodar, Ahmedabad - 382210, Gujarat. Tel +91 99786 25620,
+   india@dorsanfiltration.com.
+
+Q: spain, headquarters, barcelona, igualada
+A: Dorsan Spain (HQ): Dr. Pujadas 61, 08700 Igualada, Barcelona. Tel +34 938 042 475,
+   spain@dorsanfiltration.com.
+
+Q: reuse, reusable, single use
+A: Most cartridges and all syringe filters are single-use to avoid carry-over contamination.
+   The exception is Stainless Steel cartridges, which are designed to be cleaned and reused.
+
+Q: quality, standards, certification, fda, iso, gmp
+A: Dorsan materials meet recognised standards - FDA 21 CFR and EU food-contact directives
+   (2002/72/EC, 1935/2004, 10/2011) for food applications, PTFE cartridges validated to
+   ASTM D6394 SP0112, and air filters to EPA / DIN EN ISO 23210 / DIN EN 14902.

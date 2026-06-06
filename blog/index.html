@@ -1,0 +1,198 @@
+<style>
+  .enq2 { position: relative; background: linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%); border-top: 1px solid var(--line); overflow: hidden; }
+  .enq2::before { content:""; position:absolute; inset:0; background:
+      radial-gradient(60% 60% at 85% 10%, rgba(24,195,201,.10), transparent 60%),
+      radial-gradient(50% 50% at 5% 95%, rgba(12,143,147,.08), transparent 60%); pointer-events:none; }
+  .enq2-grid { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch;
+      background: var(--white); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); }
+  .enq2-media { position: relative; background: var(--ink); min-height: 520px; overflow: hidden; }
+  .enq2-track { display: flex; height: 100%; animation: enqScroll 28s linear infinite; }
+  .enq2-track:hover { animation-play-state: paused; }
+  .enq2-slide { position: relative; flex: 0 0 100%; height: 100%; min-height: 520px; }
+  .enq2-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .enq2-slide.broken { display: none; }
+  .enq2-cap { position: absolute; left: 26px; bottom: 26px; right: 26px; color: #fff; z-index: 2; }
+  .enq2-cap span { display:inline-block; font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:700;
+      background: rgba(24,195,201,.9); color:#04282a; padding:5px 12px; border-radius:999px; margin-bottom:10px; }
+  .enq2-cap h3 { font-family: var(--display); font-size: 1.5rem; line-height:1.1; text-shadow: 0 2px 18px rgba(0,0,0,.5); }
+  .enq2-slide::after { content:""; position:absolute; inset:0; background: linear-gradient(180deg, transparent 45%, rgba(8,18,23,.78) 100%); }
+  .enq2-dots { position:absolute; bottom:16px; left:50%; transform:translateX(-50%); display:flex; gap:7px; z-index:3; }
+  .enq2-dots i { width:7px; height:7px; border-radius:50%; background:rgba(255,255,255,.45); }
+  @keyframes enqScroll {
+    0%,18%   { transform: translateX(0); }
+    25%,43%  { transform: translateX(-100%); }
+    50%,68%  { transform: translateX(-200%); }
+    75%,93%  { transform: translateX(-300%); }
+    100%     { transform: translateX(0); }
+  }
+  .enq2-form { padding: 44px 46px; }
+  .enq2-form .eyebrow { margin-bottom: 16px; }
+  .enq2-form h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); line-height:1.08; }
+  .enq2-form > p.sub { color: var(--ink-soft); margin: 12px 0 26px; font-size: 1rem; }
+  .ef { margin-bottom: 16px; position: relative; }
+  .ef label { display:block; font-size:.78rem; font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:7px; }
+  .ef label .req { color: var(--coral); }
+  .ef input, .ef select, .ef textarea {
+    width:100%; font-family:var(--body); font-size:.98rem; color:var(--ink); background:var(--paper);
+    border:1.5px solid var(--line); border-radius:12px; padding:13px 15px; outline:none;
+    transition: border-color .2s, background .2s, box-shadow .2s; }
+  .ef input:focus, .ef select:focus, .ef textarea:focus { border-color:var(--teal); background:#fff; box-shadow:0 0 0 4px rgba(12,143,147,.12); }
+  .ef textarea { resize: vertical; min-height: 86px; }
+  .ef.invalid input, .ef.invalid select { border-color: var(--coral); box-shadow:0 0 0 4px rgba(224,87,63,.12); }
+  .ef .err-hint { display:none; color:var(--coral); font-size:.78rem; margin-top:5px; font-weight:600; }
+  .ef.invalid .err-hint { display:block; }
+  .ef-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .enq2-submit { width:100%; justify-content:center; margin-top:6px; font-size:1rem; padding:15px; }
+  .enq2-note { font-size:.8rem; color:var(--ink-soft); margin-top:12px; text-align:center; }
+  .enq2-msg { margin-top:14px; padding:13px 15px; border-radius:12px; font-size:.92rem; display:none; }
+  .enq2-msg.ok { display:block; background:#e8f5f4; border:1px solid var(--teal); color:var(--teal-deep); }
+  .enq2-msg.err { display:block; background:#fdeeea; border:1px solid var(--coral); color:#b23a25; }
+  @media (max-width: 860px) {
+    .enq2-grid { grid-template-columns: 1fr; }
+    .enq2-media { min-height: 280px; order:-1; }
+    .enq2-slide { min-height: 280px; }
+    .enq2-form { padding: 32px 24px; }
+    .ef-row { grid-template-columns: 1fr; }
+  }
+</style>
+
+<section class="enq2" id="enquiry">
+  <div class="wrap">
+    <div class="section-head reveal" style="text-align:center;max-width:42em;margin:0 auto 36px">
+      <h2>Request a quote or product information</h2>
+      <p>Choose your product and tell us how to reach you — our sales team replies within one business day.</p>
+    </div>
+    <div class="enq2-grid reveal">
+      <div class="enq2-media">
+        <div class="enq2-track" id="enqTrack"></div>
+        <div class="enq2-dots" id="enqDots"></div>
+      </div>
+      <form class="enq2-form" id="dorsanEnquiry" novalidate>
+        <span class="eyebrow">● Get in touch</span>
+        <h2>Send your enquiry</h2>
+        <p class="sub">Fields marked <span style="color:var(--coral)">*</span> are required.</p>
+        <div class="ef-row">
+          <div class="ef" data-field="name">
+            <label>Name <span class="req">*</span></label>
+            <input type="text" name="name" autocomplete="name" placeholder="Your full name" />
+            <span class="err-hint">Please enter your name.</span>
+          </div>
+          <div class="ef" data-field="phone">
+            <label>Phone <span class="req">*</span></label>
+            <input type="tel" name="phone" autocomplete="tel" placeholder="+91 ..." />
+            <span class="err-hint">Please enter a phone number.</span>
+          </div>
+        </div>
+        <div class="ef" data-field="email">
+          <label>Email</label>
+          <input type="email" name="email" autocomplete="email" placeholder="So we can send your quote" />
+          <span class="err-hint">Please enter a valid email.</span>
+        </div>
+        <div class="ef" data-field="product">
+          <label>Product of interest <span class="req">*</span></label>
+          <select name="product">
+            <option value="" disabled selected>Select a product...</option>
+            <option>Syringe Filters (G Series)</option>
+            <option>Syringe Filters (T Series)</option>
+            <option>Membrane Disc Filters</option>
+            <option>Filter Papers</option>
+            <option>Filter Cartridges</option>
+            <option>Extraction Thimbles / Cartridges</option>
+            <option>Cartridge Housings</option>
+            <option>Air Monitoring Filters</option>
+            <option>Chromatography Filtration</option>
+            <option>Other / Not sure</option>
+          </select>
+          <span class="err-hint">Please select a product.</span>
+        </div>
+        <div class="ef" data-field="message">
+          <label>Message</label>
+          <textarea name="message" placeholder="Membrane, pore size, quantity, application..."></textarea>
+        </div>
+        <button type="submit" class="btn enq2-submit">Send enquiry &rarr;</button>
+        <p class="enq2-note">Your details go straight to sales@dorsanfiltration.com. We never share them.</p>
+        <div class="enq2-msg" id="enq-result" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var CAROUSEL_IMAGES = [
+    { url: "https://www.dorsanfiltration.com/wp-content/uploads/2022/03/syringe-filters.jpg", label: "Sample Preparation", title: "Syringe Filters" },
+    { url: "https://www.dorsanfiltration.com/wp-content/uploads/2017/05/menu-papel-plegado.jpg", label: "Laboratory", title: "Folded Filter Paper" },
+    { url: "https://www.dorsanfiltration.com/wp-content/uploads/2017/03/home_medi-paper.jpg", label: "Laboratory", title: "Filter Papers" },
+    { url: "https://www.dorsanfiltration.com/wp-content/uploads/2017/05/menu-papel-cualitativo-02.jpg", label: "Laboratory", title: "Qualitative Filter Paper" },
+    { url: "https://www.dorsanfiltration.com/wp-content/uploads/2017/03/menu-lab-extaccion.jpg", label: "Soxhlet", title: "Extraction Cartridges" },
+    { url: "https://www.dorsanfiltration.com/wp-content/uploads/2026/04/menu-cartutxos-carbon-activo.jpg", label: "Industrial", title: "Cartridge Housings" }
+  ];
+  var WEB3FORMS_KEY = "";
+  var SALES_EMAIL  = "sales@dorsanfiltration.com";
+
+  var track = document.getElementById("enqTrack");
+  var dots = document.getElementById("enqDots");
+  function rebuildDots() {
+    if (!dots || !track) return;
+    var visible = track.querySelectorAll(".enq2-slide:not(.broken)").length;
+    dots.innerHTML = "";
+    for (var i = 0; i < visible; i++) { var d = document.createElement("i"); dots.appendChild(d); }
+    var n = Math.max(visible, 1);
+    track.style.animationDuration = (n * 5) + "s";
+  }
+  if (track) {
+    CAROUSEL_IMAGES.forEach(function (item) {
+      var slide = document.createElement("div"); slide.className = "enq2-slide";
+      var img = document.createElement("img"); img.loading = "lazy"; img.alt = item.title;
+      img.onerror = function () { slide.classList.add("broken"); rebuildDots(); };
+      img.onload = function () { rebuildDots(); };
+      img.src = item.url;
+      var cap = document.createElement("div"); cap.className = "enq2-cap";
+      cap.innerHTML = "<span>" + item.label + "</span><h3>" + item.title + "</h3>";
+      slide.appendChild(img); slide.appendChild(cap); track.appendChild(slide);
+    });
+    rebuildDots();
+  }
+
+  var form = document.getElementById("dorsanEnquiry");
+  var result = document.getElementById("enq-result");
+  if (!form) return;
+  function setInvalid(name, bad) { var f = form.querySelector('.ef[data-field="' + name + '"]'); if (f) f.classList.toggle("invalid", bad); }
+  function show(type, text) { result.className = "enq2-msg " + type; result.textContent = text; }
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    var name = form.name.value.trim(), phone = form.phone.value.trim(), email = form.email.value.trim();
+    var product = form.product.value, message = form.message.value.trim();
+    var ok = true;
+    setInvalid("name", !name); if (!name) ok = false;
+    setInvalid("phone", !phone); if (!phone) ok = false;
+    setInvalid("product", !product); if (!product) ok = false;
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setInvalid("email", true); ok = false; } else setInvalid("email", false);
+    if (!ok) { show("err", "Please complete the required fields."); return; }
+
+    var subject = "New website enquiry: " + product + " - " + name;
+    var btn = form.querySelector("button[type=submit]");
+    btn.disabled = true; btn.textContent = "Sending...";
+
+    if (WEB3FORMS_KEY) {
+      try {
+        var res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ access_key: WEB3FORMS_KEY, subject: subject, from_name: "Dorsan Website",
+            name: name, phone: phone, email: email || "(not provided)", product: product, message: message || "(none)" })
+        });
+        var data = await res.json();
+        if (data.success) { show("ok", "Thank you, " + name + "! Your enquiry has been sent. Our team will contact you soon."); form.reset(); }
+        else { show("err", "Sorry, sending failed. Please email " + SALES_EMAIL + " directly."); }
+      } catch (err) { show("err", "Network error. Please email " + SALES_EMAIL + " directly."); }
+      finally { btn.disabled = false; btn.innerHTML = "Send enquiry &rarr;"; }
+      return;
+    }
+    var body = "Name: " + name + "\nPhone: " + phone + "\nEmail: " + (email || "(not provided)") + "\nProduct: " + product + "\n\nMessage:\n" + (message || "(none)");
+    window.location.href = "mailto:" + SALES_EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    show("ok", "Opening your email app... if nothing happens, email " + SALES_EMAIL + " directly.");
+    btn.disabled = false; btn.innerHTML = "Send enquiry &rarr;";
+  });
+})();
+</script>

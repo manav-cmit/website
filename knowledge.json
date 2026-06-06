@@ -1,0 +1,169 @@
+{
+  "company": {
+    "name": "Dorsan Filtration",
+    "motto": "Living Filtration",
+    "since": 1998,
+    "description": "Dorsan Filtration manufactures laboratory and industrial filtration products including syringe filters, membrane filters, filter papers, filter cartridges, filter presses, extraction thimbles, air monitoring filters and chromatography filtration products.",
+    "countries_served": 68,
+    "manufacturing_locations": ["Germany", "Spain", "France", "India", "Mexico", "Tunisia"]
+  },
+
+  "contact": {
+    "website": "www.dorsanfiltration.com",
+    "general_email": "info@dorsanfiltration.com",
+    "quote_note": "For pricing, quotes, samples or to become a distributor, use the Request a Quote button or email india@dorsanfiltration.com. We reply within one business day. Free samples are available where possible.",
+    "offices": [
+      {
+        "country": "India",
+        "company": "Dorsan Filtration India Pvt. Ltd.",
+        "address": "Sunshine Industrial Hub-1, B/H Cadila Healthcare Ltd., Navapura, Changodar, Ahmedabad - 382210, Gujarat, India",
+        "phone": "+91 99786 25620",
+        "email": "india@dorsanfiltration.com"
+      },
+      {
+        "country": "Spain (Headquarters)",
+        "address": "Dr. Pujadas 61, 08700 Igualada, Barcelona, Spain",
+        "phone": "+34 938 042 475",
+        "email": "spain@dorsanfiltration.com"
+      },
+      {
+        "country": "France",
+        "address": "52, Route de Bischwiller, 67300 Schiltigheim",
+        "phone": "+33 685 539 515",
+        "email": "france@dorsanfiltration.com"
+      },
+      {
+        "country": "Germany",
+        "address": "Brühlerstraße 49, 76707 Hambrücken (Baden-Württemberg)",
+        "phone": "+49 (0) 7255 3971142",
+        "email": "germany@dorsanfiltration.com"
+      },
+      {
+        "country": "Mexico",
+        "address": "Ángel Romero 9, Lomas del Colli, 45010 Zapopan Jalisco",
+        "phone": "+52 33 3852 5733",
+        "email": "mexico@dorsanfiltration.com"
+      },
+      {
+        "country": "Tunisia",
+        "address": "Route de Tunis, Km 4, 5000 Nabeul, Tunisia",
+        "phone": "+216 5703 44 50",
+        "email": "tunisia@dorsanfiltration.com"
+      }
+    ]
+  },
+
+  "categories": [
+    { "name": "Syringe Filters", "description": "High-performance syringe filters for sample preparation and laboratory filtration." },
+    { "name": "Membrane Filters", "description": "Microfiltration membrane discs for chromatography and laboratory use." },
+    { "name": "Filter Papers", "description": "Qualitative, quantitative, folded, microfiber and cytocentrifuge filter papers." },
+    { "name": "Filter Cartridges", "description": "Industrial depth and pleated cartridges in many materials and sizes." },
+    { "name": "Filter Presses", "description": "Lab and industrial filter presses and plates." },
+    { "name": "Air Monitoring", "description": "Filters for PM2.5, PM10, TSP and environmental monitoring." },
+    { "name": "Extraction Thimbles", "description": "Cellulose, glass microfiber and quartz thimbles for Soxhlet extraction." },
+    { "name": "Chromatography", "description": "Filtration solutions for HPLC, UHPLC and LC-MS." }
+  ],
+
+  "membrane_materials": [
+    { "code": "CA", "name": "Cellulose Acetate", "use": "Aqueous biological samples, low protein binding." },
+    { "code": "MCE", "name": "Mixed Cellulose Esters", "use": "Economical routine aqueous filtration and microbiology." },
+    { "code": "NC", "name": "Cellulose Nitrate", "use": "High protein affinity; blotting (Southern/Northern/Western)." },
+    { "code": "NY", "name": "Nylon", "use": "General HPLC, broad aqueous and organic solvent compatibility; higher protein binding." },
+    { "code": "PCTE", "name": "Polycarbonate", "use": "Track-etched membrane for precise surface capture." },
+    { "code": "PES", "name": "Polyethersulfone", "use": "Fast aqueous flow, very low protein binding, aqueous buffers and biological samples." },
+    { "code": "PP", "name": "Polypropylene", "use": "Chemically inert; prefiltration and broad chemical compatibility." },
+    { "code": "PTFE", "name": "Polytetrafluoroethylene", "use": "Hydrophobic; aggressive/non-aqueous solvents, acids, bases, gas/venting." },
+    { "code": "PVDF", "name": "Polyvinylidene Fluoride", "use": "Hydrophilic; LC-MS, low extractables, low protein binding." }
+  ],
+
+  "products": [
+    {
+      "name": "G Series Syringe Filters",
+      "category": "Syringe Filters",
+      "description": "Polypropylene housing with reinforcing outer ring for high pressure or dense liquids.",
+      "features": ["High pressure resistance", "High filtration speed", "Low protein binding", "High particle loading capacity", "Uniform porosity"],
+      "available_membranes": ["PVDF", "PTFE", "PES", "Nylon", "Polypropylene", "CA", "MCE"],
+      "diameters": ["4 mm", "13 mm", "25 mm", "30 mm"],
+      "pore_sizes": ["0.22 µm", "0.45 µm"],
+      "housing": "Medical-grade polypropylene"
+    },
+    {
+      "name": "T Series Syringe Filters",
+      "category": "Syringe Filters",
+      "description": "Syringe filters with a polypropylene prefilter to extend filtration volume; ideal for dirty or viscous samples.",
+      "features": ["Prefilter layer", "Extended filter life", "Improved particle retention", "High flow rate"],
+      "available_membranes": ["CA", "MCE", "PES", "Nylon", "PP", "PTFE", "PVDF"],
+      "diameters": ["4 mm", "13 mm", "25 mm", "30 mm"],
+      "pore_sizes": ["0.22 µm", "0.45 µm"],
+      "note": "35 mm size launching soon for higher volumes and challenging samples."
+    },
+    {
+      "name": "Membrane Disc Filters",
+      "category": "Membrane Filters",
+      "description": "Disc membranes for mobile phase filtration and sample preparation.",
+      "available_membranes": ["CA", "MCE", "NC", "NY", "PCTE", "PES", "PP", "PTFE", "PVDF"],
+      "pore_sizes": ["0.22 µm", "0.45 µm"],
+      "diameters": ["25 mm", "47 mm", "90 mm", "142 mm", "293 mm"]
+    },
+
+    { "name": "Qualitative Filter Paper", "category": "Filter Papers", "description": "Routine filtration paper from virgin cellulose fibers and cotton linters; smooth or creped." },
+    { "name": "Quantitative Filter Paper", "category": "Filter Papers", "description": "Ash-free, acid-treated filter paper for gravimetric/quantitative analysis; high wet strength for Büchner." },
+    { "name": "Folded Filter Paper", "category": "Filter Papers", "description": "High-speed filtration using the entire surface; retention 2-50 µm." },
+    { "name": "Microglass Fiber Filter Paper", "category": "Filter Papers", "description": "100% binder-free microfiber glass; sub-1 µm retention; air and water analysis." },
+    { "name": "Cytocentrifuge Paper", "category": "Filter Papers", "description": "Absorbent paper for blood cell analysis in cytocentrifuges." },
+
+    { "name": "String Wound Cartridges", "category": "Filter Cartridges", "description": "Depth prefilters, 4-50 inch, 1-200 µm, cotton/PP/PET/GF, PP or 304/316L core; process water, plating, chemicals, oils, wastewater.", "single_use": true },
+    { "name": "Meltblown Cartridges", "category": "Filter Cartridges", "description": "PP or Nylon depth cartridges, 9.75-50 inch, 1-200 µm, absolute or nominal, no binding resins." },
+    { "name": "Pleated PP Cartridges", "category": "Filter Cartridges", "description": "10-40 inch, 0.2-40 µm, up to 99.98% (Beta 5000) absolute; food & beverage, RO prefilter, chemicals, pharma, API." },
+    { "name": "PES Cartridges", "category": "Filter Cartridges", "description": "10-40 inch, 0.2-0.8 µm, FDA compliant, stainless ring for steam sterilization; wines, water, beers, juices, pharma." },
+    { "name": "PTFE Cartridges", "category": "Filter Cartridges", "description": "Hydrophobic, sterilizing grade (ASTM D6394 SP0112), integrity tested, 0.05-1.0 µm; sterile gas, venting, autoclave/tank vents." },
+    { "name": "PVDF Cartridges", "category": "Filter Cartridges", "description": "2-layer high-performance, 0.1-0.65 µm, broad chemical compatibility; food & bev, protein purification, cell cultures, pharma." },
+    { "name": "Glass Microfiber Cartridges", "category": "Filter Cartridges", "description": "Borosilicate, positively charged, traps bacteria/endotoxins/colloids; FDA; prefilter for absolute membranes." },
+    { "name": "Activated Carbon Cartridges", "category": "Filter Cartridges", "description": "Granular/block/impregnated cellulose, 9.75-20 inch; removes chlorine, odour, colour." },
+    { "name": "PET Synthetic Pleated Cartridges", "category": "Filter Cartridges", "description": "9.75-40 inch, 1-50 µm, max 60C; RO prefilter, pools, chemicals, food & bev." },
+    { "name": "Stainless Steel Cartridges", "category": "Filter Cartridges", "description": "AISI 304/316L, cylindrical or pleated, REUSABLE, 5-850 µm, up to 650C; high-temp, caustic, corrosive, gas.", "single_use": false },
+    { "name": "High Flow / Maxpleat / Delta Flow Cartridges", "category": "Filter Cartridges", "description": "Large-diameter high-flow cartridges (DLMHFB, DLHF, DLPP) for RO pretreatment, desalination, condensate and cooling water." },
+    { "name": "DUTC-Pure Capsule Filters", "category": "Filter Cartridges", "description": "Disposable, 100% integrity-testable capsules, 2L-100L, clean-room made." },
+
+    { "name": "Filter Presses (Fortiplates, Bebinox, Pilot 200M, Labinox, Farminox, Mininox)", "category": "Filter Presses", "description": "Lab and industrial presses in stainless steel for food & beverage and chem-pharma; use filter paper or sheets; gasket-free options available." },
+
+    { "name": "Cellulose Extraction Thimbles", "category": "Extraction Thimbles", "description": "Single-piece cellulose thimbles for Soxhlet extraction; low-medium temperature." },
+    { "name": "Glass Microfiber Thimbles", "category": "Extraction Thimbles", "description": "High-purity borosilicate glass microfiber thimbles, up to 500C, >99% retention (BS4400)." },
+    { "name": "Quartz Microfiber Thimbles", "category": "Extraction Thimbles", "description": "100% pure silica quartz thimbles resistant up to 1000C." }
+  ],
+
+  "chromatography": {
+    "applications": ["HPLC", "UHPLC", "LC-MS", "Preparative Chromatography", "Analytical Chromatography"],
+    "common_problems_without_filtration": ["Blocked column frits", "Increased backpressure", "Peak distortion", "Baseline noise", "Pump damage", "Injector contamination", "Reduced column life"],
+    "recommended_membranes": {
+      "General HPLC": "Nylon",
+      "LC-MS": "Hydrophilic PVDF",
+      "Aggressive Solvents": "PTFE",
+      "Aqueous Buffers": "PES"
+    },
+    "workflow": ["Sample preparation", "Pre-filtration if needed", "Final syringe filtration (0.45 / 0.22 / 0.1 µm)", "Mobile phase membrane disc filtration", "Degassing", "Injection"]
+  },
+
+  "air_monitoring": {
+    "applications": ["PM2.5 Monitoring", "PM10 Monitoring", "TSP Monitoring", "Heavy Metal Monitoring", "Radioactivity Monitoring"],
+    "products": ["Glass Microfiber Filters", "Quartz Microfiber Filters", "PTFE PM2.5 Filters with PP ring", "CA500 Radioactivity Filters"],
+    "standards": ["EPA", "DIN EN ISO 23210", "DIN EN 14902"]
+  },
+
+  "quality": {
+    "standards": ["FDA 21 CFR food-contact", "EU directives 2002/72/EC, 1935/2004, 10/2011", "PTFE cartridges validated to ASTM D6394 SP0112", "Air filters to EPA / DIN EN ISO 23210 / DIN EN 14902"]
+  },
+
+  "faq": [
+    { "question": "Which membrane is recommended for LC-MS?", "answer": "Hydrophilic PVDF, due to low extractables and low protein binding." },
+    { "question": "Which membrane is recommended for aggressive solvents?", "answer": "PTFE." },
+    { "question": "Which membrane is suitable for aqueous buffers?", "answer": "PES." },
+    { "question": "What pore size is commonly used for HPLC?", "answer": "0.45 µm." },
+    { "question": "What pore size is commonly used for sterile filtration?", "answer": "0.22 µm, which is sterilising-grade and removes bacteria." },
+    { "question": "What is the difference between G Series and T Series?", "answer": "G Series has a reinforcing outer ring for high pressure or dense liquids; T Series adds a polypropylene prefilter to extend filtration volume for dirty or viscous samples." },
+    { "question": "Can syringe filters be reused?", "answer": "No. Syringe filters are single-use to avoid carry-over contamination. Only stainless steel cartridges are reusable." },
+    { "question": "Do you provide free samples?", "answer": "Samples are available where possible. Share your membrane, pore size, format and volume via Request a Quote or email india@dorsanfiltration.com." },
+    { "question": "How do I get a quote?", "answer": "Use the Request a Quote button or email india@dorsanfiltration.com with your specifications. We reply within one business day." },
+    { "question": "What syringe filter diameters are available?", "answer": "4 mm, 13 mm, 25 mm and 30 mm, with a 35 mm size launching soon." }
+  ]
+}
